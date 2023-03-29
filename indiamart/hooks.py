@@ -116,7 +116,7 @@ app_license = "MIT"
 scheduler_events = {
     "a":{
         "30 * * * *": [
-			"indiamart.api.indiamart_api"
+			"indiamart.api.indiamart_call"
 		],
     }
 #	"all": [

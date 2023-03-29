@@ -23,7 +23,7 @@ def Convert(result):
 
 
 @frappe.whitelist()
-def indiamart_api():
+def indiamart_call():
     print("call...............Call..................Call.................")
     website_url = frappe.db.get_single_value("Indiamart API", "indiamart_url")
     glusr_crm_key = frappe.db.get_single_value("Indiamart API", "indiamart_key")
@@ -114,8 +114,8 @@ def indiamart_api():
 @frappe.whitelist()
 def indiamart_api_btn(start_date,end_date):
     print("call...............Call..................Call.................")
-    website_url = frappe.db.get_single_value("Indiamart Integration", "indiamart_url")
-    glusr_crm_key = frappe.db.get_single_value("Indiamart Integration", "indiamart_key")
+    website_url = frappe.db.get_single_value("Indiamart API", "indiamart_url")
+    glusr_crm_key = frappe.db.get_single_value("Indiamart API", "indiamart_key")
     # start_date, end_date = start_and_end()
     creating_url=f"{website_url}?glusr_crm_key={glusr_crm_key}&start_time={start_date}&end_time={end_date}"
     # creating_url = website_url,"?",glusr_crm_key+"&"+"start_time="+start_date+"&"+"end_time="+end_date

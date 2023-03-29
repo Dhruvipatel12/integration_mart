@@ -1,0 +1,13 @@
+[
+ {
+  "docstatus": 0,
+  "doctype": "Client Script",
+  "dt": "Indiamart API",
+  "enabled": 1,
+  "modified": "2023-03-29 18:51:35.413977",
+  "module": "indiamart",
+  "name": "Indiamart API",
+  "script": "frappe.ui.form.on('Indiamart API', {\n\tsync_lead:function(frm){\n\n\t\tif(!frm.doc.start_date || !frm.doc.end_date){\n\t\t\tfrappe.throw(__(\"From And To Date Mandatory\"))\n\t\t}\n\t\tif(frm.doc.start_date && frm.doc.end_date){\n\t\tfrappe.call({\n\t\t\tmethod:\"indiamart.api.indiamart_api_btn\",\n\t\t\targs:{\"start_date\":frm.doc.start_date,\"end_date\":frm.doc.end_date},\n\t\t\tfreeze:true,\n\t\t\tfreeze_message:\"Please Wait . .\",\n\t\t\tcallback:function(r){\n\t\t\t\tconsole.log(r)\n\t\t\t}\n\t\t\n\t\t})  \n\t    }\n\t}\n})",
+  "view": "Form"
+ }
+]

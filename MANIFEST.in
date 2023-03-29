@@ -1,0 +1,18 @@
+include MANIFEST.in
+include requirements.txt
+include *.json
+include *.md
+include *.py
+include *.txt
+recursive-include indiamart *.css
+recursive-include indiamart *.csv
+recursive-include indiamart *.html
+recursive-include indiamart *.ico
+recursive-include indiamart *.js
+recursive-include indiamart *.json
+recursive-include indiamart *.md
+recursive-include indiamart *.png
+recursive-include indiamart *.py
+recursive-include indiamart *.svg
+recursive-include indiamart *.txt
+recursive-exclude indiamart *.pyc

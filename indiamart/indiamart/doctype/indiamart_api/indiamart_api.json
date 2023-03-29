@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2023-03-29 19:11:29.572541",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "indiamart_url",
+  "indiamart_key",
+  "column_break_3",
+  "mobile_no",
+  "section_break_5",
+  "start_date",
+  "sync_lead",
+  "end_date",
+  "column_break_9"
+ ],
+ "fields": [
+  {
+   "fieldname": "indiamart_url",
+   "fieldtype": "Data",
+   "label": "Indiamart URL"
+  },
+  {
+   "fieldname": "indiamart_key",
+   "fieldtype": "Data",
+   "label": "Indiamart Key"
+  },
+  {
+   "fieldname": "mobile_no",
+   "fieldtype": "Data",
+   "label": "Mobile No"
+  },
+  {
+   "fieldname": "start_date",
+   "fieldtype": "Datetime",
+   "label": "Start Date"
+  },
+  {
+   "fieldname": "sync_lead",
+   "fieldtype": "Button",
+   "label": "Sync Lead"
+  },
+  {
+   "fieldname": "end_date",
+   "fieldtype": "Datetime",
+   "label": "End Date"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_5",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "column_break_9",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2023-03-29 19:12:07.643599",
+ "modified_by": "Administrator",
+ "module": "indiamart",
+ "name": "Indiamart API",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
